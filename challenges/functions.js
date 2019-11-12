@@ -8,7 +8,7 @@
 */
 function consume(a,b,cb){
   return cb(a, b);
-}
+};
 
 /* Step 2: Create several functions to callback with consume();
   * Create a function named add that returns the sum of two numbers
@@ -21,12 +21,12 @@ function add(a,b){
 function multiply(a,b){
   return a * b;
 }
-function greeting(a,b){
-  return 'Hello ${a} ${b}, nice to meet you!';
+function greeting(firstname,lastname){
+  return ('Hello', firstname, lastname + ' nice to meet you!');
 }
 
 
-/* Step 3: Check your work by un-commenting the following calls to consume(): */
+/* Step 3: Check your work by un-commenting the following calls to consume()1: */
  console.log(consume(2, 2, add)); // 4
  console.log(consume(10, 16, multiply)); // 160
  console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
